@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c07f5b7-9700-40a3-989d-17c93e29e5ea" name="Default" comment="">
-      <change type="MOVED" beforePath="F:\workspace\Nearest-Neighbor\src\com\company\NearestNeighbor.java" afterPath="$PROJECT_DIR$/src/NearestNeighbor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NearestNeighbor.java" afterPath="$PROJECT_DIR$/src/NearestNeighbor.java" />
     </list>
     <ignored path="Nearest-Neighbor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,14 +28,34 @@
       <file leaf-file-name="NearestNeighbor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NearestNeighbor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24011299" vertical-offset="0" max-vertical-offset="3060">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8072289" vertical-offset="3047" max-vertical-offset="4335">
+              <caret line="195" column="22" selection-start-line="195" selection-start-column="22" selection-end-line="195" selection-end-column="22" />
               <folding>
-                <element signature="e#1562#1571#0" expanded="true" />
-                <element signature="e#1634#1643#0" expanded="true" />
-                <element signature="e#4763#4783#0" expanded="true" />
-                <element signature="e#5125#5134#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1656#1665#0" expanded="true" />
+                <element signature="e#1728#1737#0" expanded="true" />
+                <element signature="e#2872#2880#0" expanded="true" />
+                <element signature="e#2884#3214#0" expanded="true" />
+                <element signature="e#3203#3204#0" expanded="true" />
+                <element signature="e#6687#6707#0" expanded="true" />
+                <element signature="e#7049#7058#0" expanded="true" />
+                <element signature="e#8597#8598#0" expanded="true" />
+                <element signature="e#8626#8627#0" expanded="true" />
+                <element signature="e#8651#8652#0" expanded="true" />
+                <element signature="e#8680#8681#0" expanded="true" />
+                <element signature="e#8715#8716#0" expanded="true" />
+                <element signature="e#8747#8748#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crossValidation1.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/crossValidation1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,10 +74,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/input/crossValidation1.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/company/NearestNeighbor.java" />
         <option value="$PROJECT_DIR$/src/NearestNeighbor.java" />
+        <option value="$PROJECT_DIR$/input/crossValidation1.txt" />
       </list>
     </option>
   </component>
@@ -123,6 +143,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NearestNeighbor.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -334,7 +358,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2579425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37683523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41272432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -373,10 +397,20 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="e#1562#1571#0" expanded="true" />
-            <element signature="e#1634#1643#0" expanded="true" />
-            <element signature="e#4763#4783#0" expanded="true" />
-            <element signature="e#5125#5134#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1656#1665#0" expanded="true" />
+            <element signature="e#1728#1737#0" expanded="true" />
+            <element signature="e#2872#2880#0" expanded="true" />
+            <element signature="e#2884#3214#0" expanded="true" />
+            <element signature="e#3203#3204#0" expanded="true" />
+            <element signature="e#6687#6707#0" expanded="true" />
+            <element signature="e#7049#7058#0" expanded="true" />
+            <element signature="e#8597#8598#0" expanded="true" />
+            <element signature="e#8626#8627#0" expanded="true" />
+            <element signature="e#8651#8652#0" expanded="true" />
+            <element signature="e#8680#8681#0" expanded="true" />
+            <element signature="e#8715#8716#0" expanded="true" />
+            <element signature="e#8747#8748#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -389,14 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/crossValidation1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="782">
@@ -405,15 +431,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/input/crossValidation1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NearestNeighbor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24011299" vertical-offset="0" max-vertical-offset="3060">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8072289" vertical-offset="3047" max-vertical-offset="4335">
+          <caret line="195" column="22" selection-start-line="195" selection-start-column="22" selection-end-line="195" selection-end-column="22" />
           <folding>
-            <element signature="e#1562#1571#0" expanded="true" />
-            <element signature="e#1634#1643#0" expanded="true" />
-            <element signature="e#4763#4783#0" expanded="true" />
-            <element signature="e#5125#5134#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1656#1665#0" expanded="true" />
+            <element signature="e#1728#1737#0" expanded="true" />
+            <element signature="e#2872#2880#0" expanded="true" />
+            <element signature="e#2884#3214#0" expanded="true" />
+            <element signature="e#3203#3204#0" expanded="true" />
+            <element signature="e#6687#6707#0" expanded="true" />
+            <element signature="e#7049#7058#0" expanded="true" />
+            <element signature="e#8597#8598#0" expanded="true" />
+            <element signature="e#8626#8627#0" expanded="true" />
+            <element signature="e#8651#8652#0" expanded="true" />
+            <element signature="e#8680#8681#0" expanded="true" />
+            <element signature="e#8715#8716#0" expanded="true" />
+            <element signature="e#8747#8748#0" expanded="true" />
           </folding>
         </state>
       </provider>
