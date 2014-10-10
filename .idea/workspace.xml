@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c07f5b7-9700-40a3-989d-17c93e29e5ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nearest-Neighbor.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MOVED" beforePath="F:\workspace\Nearest-Neighbor\src\com\company\NearestNeighbor.java" afterPath="$PROJECT_DIR$/src/NearestNeighbor.java" />
     </list>
     <ignored path="Nearest-Neighbor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,16 +26,15 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="NearestNeighbor.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/NearestNeighbor.java">
+        <entry file="file://$PROJECT_DIR$/src/NearestNeighbor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7175141" vertical-offset="1293" max-vertical-offset="3094">
-              <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.24011299" vertical-offset="0" max-vertical-offset="3060">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1584#1593#0" expanded="true" />
-                <element signature="e#1656#1665#0" expanded="true" />
-                <element signature="e#4785#4805#0" expanded="true" />
-                <element signature="e#5147#5156#0" expanded="true" />
+                <element signature="e#1562#1571#0" expanded="true" />
+                <element signature="e#1634#1643#0" expanded="true" />
+                <element signature="e#4763#4783#0" expanded="true" />
+                <element signature="e#5125#5134#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,11 +53,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/NearestNeighbor.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/input/crossValidation1.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/company/NearestNeighbor.java" />
+        <option value="$PROJECT_DIR$/src/NearestNeighbor.java" />
       </list>
     </option>
   </component>
@@ -127,10 +124,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -175,7 +168,7 @@
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.company.NearestNeighbor" />
+      <option name="MAIN_CLASS_NAME" value="NearestNeighbor" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -375,16 +368,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/NearestNeighbor.java">
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1584#1593#0" expanded="true" />
-            <element signature="e#1656#1665#0" expanded="true" />
-            <element signature="e#4785#4805#0" expanded="true" />
-            <element signature="e#5147#5156#0" expanded="true" />
+            <element signature="e#1562#1571#0" expanded="true" />
+            <element signature="e#1634#1643#0" expanded="true" />
+            <element signature="e#4763#4783#0" expanded="true" />
+            <element signature="e#5125#5134#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -413,16 +405,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/NearestNeighbor.java">
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7175141" vertical-offset="1293" max-vertical-offset="3094">
-          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.24011299" vertical-offset="0" max-vertical-offset="3060">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1584#1593#0" expanded="true" />
-            <element signature="e#1656#1665#0" expanded="true" />
-            <element signature="e#4785#4805#0" expanded="true" />
-            <element signature="e#5147#5156#0" expanded="true" />
+            <element signature="e#1562#1571#0" expanded="true" />
+            <element signature="e#1634#1643#0" expanded="true" />
+            <element signature="e#4763#4783#0" expanded="true" />
+            <element signature="e#5125#5134#0" expanded="true" />
           </folding>
         </state>
       </provider>
