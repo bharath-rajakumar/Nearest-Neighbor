@@ -118,6 +118,98 @@ public class NearestNeighbor {
         }
 
         // Step : Classify the unclassified elements present in the temp table for all k-Values
+        for (int k = 1; k <= 5; k++) {
+            System.out.println("Error = " + totalErrorTable[k-1] + " Variance = " + variance[k-1] + " Sigma = " + sigma[k-1]);
+            System.out.println("Classification Table");
+            String[][] classifiedTable = new String [rowSize][colSize];
+            for(int i = 0; i < rowSize; i++) {
+                for(int j = 0; j < colSize; j++) {
+                    if(tempTable[i][j].equals(".")) {
+                        // classify according to k-NN
+                        Point a = new Point(j, i);
+                        String kNNClassification = knnClassifier(k, a, classifierFold);
+                        classifiedTable[i][j] = kNNClassification;
+                    } else {
+                        // copy th same symbol for + and -
+                        classifiedTable[i][j] = tempTable[i][j];
+                    }
+                    System.out.print(classifiedTable[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    public static String knnClassifier(Integer k, Point a, ArrayList<Integer> fold) {
+        // find the euclidean distance of each point from point A
+        Point[] dist = euclideanDistance(a, fold);
+
+        // Create a priority queue that will store only k shortest Point based on its euclidean distance
+        PriorityQueue<Point> kNearestPoints = new PriorityQueue<Point>(k, new Comparator<Point>() {
+            @Override
+            public int compare(Point p1, Point p2) {
+                if(p1.dist > p2.dist) {
+                    return - 1;
+                }
+                if(p1.dist < p2.dist) {
+                    return 1;
+                }
+                return 0;
+            }
+        });
+
+        for(Point p : dist) {
+            if(kNearestPoints.size() == k) {
+                kNearestPoints.add(p);
+                kNearestPoints.poll();
+            } else {
+                kNearestPoints.add(p);
+            }
+        }
+
+        // Find no of positive and negative category
+        int pcount = 0;
+        int ncount = 0;
+        for (Point p : kNearestPoints) {
+            //System.out.println("("+p.x+", "+p.y+"), "+p.getDistance()+", " + p.category);
+            if(p.category.equals("+")) {
+                pcount = pcount + 1;
+            }
+
+            if(p.category.equals("-")) {
+                ncount = ncount + 1;
+            }
+        }
+
+        // Classify the point based on number of positives and negatives count
+        if (pcount > ncount) {
+            return "+";
+            //System.out.println(a.y + ", " + a.x + " is classified as + ");
+        } else {
+            return "-";
+            //System.out.println(a.y + ", " + a.x + " is Classified as - ");
+        }
+        //System.out.println("---");
+
+        //return "*";
+    }
+
+    public static Point[] euclideanDistance(Point a, ArrayList<Integer> fold) {
+        Point[] dist = new Point[fold.size()];
+        int x1 = a.x;
+        int y1 = a.y;
+        Point one = new Point(x1, y1);
+        int i = 0;
+        for(Integer point : fold) {
+            int x2 = Integer.parseInt(referenceTable[point][1]);
+            int y2 = Integer.parseInt(referenceTable[point][2]);
+            Point two = new Point(x2, y2);
+            two.dist = Math.pow((Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)), 0.5);
+            two.category = referenceTable[point][3];
+            dist[i] = two;
+            i++;
+        }
+        return dist;
     }
 
     public static String knnClassifier(Integer k, Integer a, ArrayList<Integer> trainingFold) {
