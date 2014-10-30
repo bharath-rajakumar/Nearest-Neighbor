@@ -14,8 +14,10 @@ public class NearestNeighbor {
     public static int colSize;
     public static void main(String[] args) {
         // Step : Read the two input files
-        String file1Contents = readFile("input/crossValidation1.txt");
-        String file2Contents = readFile("input/data1.txt");
+        //String file1Contents = readFile("input/crossValidation1.txt");
+        //String file2Contents = readFile("input/data1.txt");
+        String file1Contents = readFile(args[0]);
+        String file2Contents = readFile(args[1]);
 
         // Step : Extract information by tokenizing each line
         String[] file1Lines = file1Contents.split("[\\r\\n]+");
@@ -125,12 +127,12 @@ public class NearestNeighbor {
             for(int i = 0; i < rowSize; i++) {
                 for(int j = 0; j < colSize; j++) {
                     if(tempTable[i][j].equals(".")) {
-                        // classify according to k-NN
+                        // Classify according to k-NN
                         Point a = new Point(j, i);
                         String kNNClassification = knnClassifier(k, a, classifierFold);
                         classifiedTable[i][j] = kNNClassification;
                     } else {
-                        // copy th same symbol for + and -
+                        // Copy th same symbol for + and -
                         classifiedTable[i][j] = tempTable[i][j];
                     }
                     System.out.print(classifiedTable[i][j] + " ");
@@ -141,7 +143,7 @@ public class NearestNeighbor {
     }
 
     public static String knnClassifier(Integer k, Point a, ArrayList<Integer> fold) {
-        // find the euclidean distance of each point from point A
+        // Find the euclidean distance of each point from point A
         Point[] dist = euclideanDistance(a, fold);
 
         // Create a priority queue that will store only k shortest Point based on its euclidean distance
@@ -198,7 +200,6 @@ public class NearestNeighbor {
         Point[] dist = new Point[fold.size()];
         int x1 = a.x;
         int y1 = a.y;
-        Point one = new Point(x1, y1);
         int i = 0;
         for(Integer point : fold) {
             int x2 = Integer.parseInt(referenceTable[point][1]);
@@ -213,7 +214,7 @@ public class NearestNeighbor {
     }
 
     public static String knnClassifier(Integer k, Integer a, ArrayList<Integer> trainingFold) {
-        // find the euclidean distance of each point from point A
+        // Find the euclidean distance of each point from point A
         Point[] dist = euclideanDistance(a, trainingFold);
 
         // Create a priority queue that will store only k shortest Point based on its euclidean distance
@@ -333,7 +334,7 @@ public class NearestNeighbor {
         int kCount = 0;
         int i = 0;
         while(kCount <= kFold && i < n) {
-            // create new arrayList
+            // Create new arrayList
             int count = 0;
             ArrayList<Integer> temp = new ArrayList<Integer>();
             while (count < elementCount) {
@@ -346,7 +347,7 @@ public class NearestNeighbor {
                 temp.add(Integer.parseInt(permutation1[i]));
                 i = i + 1;
             }
-            // add the list to result
+            // Add the list to result
             result.add(temp);
             kCount = kCount + 1;
         }
